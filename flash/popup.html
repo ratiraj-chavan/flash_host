@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flash Host</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      width: 320px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(#d891e8, #af3fdb);
+    }
+
+    .container {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 12px;
+      color: #444;
+    }
+
+    textarea {
+      width: 100%;
+      height: 160px;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: none;
+    }
+
+    input[type="file"] {
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 12px;
+      padding: 10px;
+      background-color: #c923df;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #711c7d;
+    }
+
+    #result {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Flash Host</h1>
+
+    <textarea id="htmlInput" placeholder="Paste yourcode here..."></textarea>
+    <button id="deployHtmlBtn">Deploy Site</button>
+
+    <hr style="margin: 16px 0;"><br>
+ <button id="adminBtn" class="btn">User Dashboard</button>
+    <!-- <input type="file" id="zipInput" accept=".zip" />
+    <button id="deployZipBtn">Deploy ZIP</button> -->
+
+    <div id="result"></div>
+  </div>
+</body>
+  <script src="popup.js" defer></script>
+
+</html>

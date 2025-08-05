@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flash Host - Google Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 120px;
+    }
+
+    .container {
+      border: 1px solid #040404;
+      align-content: center;
+      max-width: 700px;
+      margin: auto;
+      /* background: linear-gradient(#e8e0e9, #ffffff); */
+      border-radius: 12px;
+      padding: 30px;
+      background: white;
+      /* box-shadow: 0 0 20px rgba(19, 18, 18, 0.1); */
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #271b2c;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom:20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .card {
+      background: white;
+      /* border: 1px solid #040404; */
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .google-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      color: #444;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      font-size: 16px;
+      width: 100%;
+      max-width: 280px;
+      margin: 20px auto 0;
+      padding: 10px 15px;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s;
+      box-shadow: #333;
+    }
+
+    .google-btn:hover {
+      background: #f5f2f2;
+    }
+
+    .google-icon-wrapper {
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .google-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .btn-text {
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚡ Flash Host</h1>
+    <div class="card">
+      <h2>Log In</h2>
+      <div class="google-btn" id="googleLoginBtn">
+        <div class="google-icon-wrapper">
+          <img class="google-icon" src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo">
+        </div>
+        <span class="btn-text">Continue with Google</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Your login.js script -->
+  <script type="module" src="login.js"></script>
+</body>
+</html>

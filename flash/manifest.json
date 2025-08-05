@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Flash Host",
+  "version": "1.0",
+  "description": "Deploy static websites with ease",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "admin/login.html",
+        "admin/admin.html",
+        "admin/login.js",
+        "admin/admin.js",
+        "admin/firebase-config.js",
+        "admin/style.css"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
