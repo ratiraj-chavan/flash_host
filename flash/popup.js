@@ -1,11 +1,11 @@
 const htmlInput = document.getElementById("htmlInput") || document.getElementById("code");
 const result = document.getElementById("result");
-//admin link
+//userdashboard link
 document.addEventListener("DOMContentLoaded", () => {
-  const adminBtn = document.getElementById("adminBtn");
-  if (adminBtn) {
-    adminBtn.addEventListener("click", () => {
-      window.open("http://127.0.0.1:5500/user_dashboard/login.html", "_blank");
+  const userDashboardBtn = document.getElementById("userDashboardBtn");
+  if (userDashboardBtn) {
+    userDashboardBtn.addEventListener("click", () => {
+      window.open("https://flash-host.vercel.app/login.html", "_blank");
     });
   }
 });
