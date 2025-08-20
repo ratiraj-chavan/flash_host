@@ -10,6 +10,6 @@ const provider = new GoogleAuthProvider();
 document.getElementById("googleLoginBtn").addEventListener("click", () => {
   signInWithPopup(auth, provider)
     .then(() => {
-      window.location.href = "https://flash-host.vercel.app/user_dashboard/dashboard.html";
+      window.location.href = "dashboard.html";
     })
 });
