@@ -1,5 +1,4 @@
 const htmlInput = document.getElementById("htmlInput") || document.getElementById("code");
-const zipInput = document.getElementById("zipInput");
 const result = document.getElementById("result");
 //admin link
 document.addEventListener("DOMContentLoaded", () => {
@@ -41,42 +40,6 @@ document.getElementById("deployHtmlBtn")?.addEventListener("click", async () => 
 
   setTimeout(() => {
     document.getElementById("deployHtmlBtn").disabled = false;
-  }, 5000);
-});
-
-// ZIP Deployment
-document.getElementById("deployZipBtn")?.addEventListener("click", async () => {
-  const file = zipInput?.files?.[0];
-  if (!file || file.type !== "application/zip") {
-    result.textContent = "❌ Please select a valid .zip file.";
-    return;
-  }
-
-  result.textContent = "📦 Uploading ZIP...";
-  document.getElementById("deployZipBtn").disabled = true;
-
-  try {
-    const formData = new FormData();
-    formData.append("file", file);
-
-    const res = await fetch("http://localhost:3000/upload-zip", {
-      method: "POST",
-      body: formData
-    });
-
-    const data = await res.json();
-    if (data.success) {
-      result.textContent = "✅ ZIP uploaded & stored in MySQL!";
-    } else {
-      result.textContent = `❌ ${data.error || "Upload failed."}`;
-    }
-  } catch (err) {
-    console.error(err);
-    result.textContent = "❌ Server error.";
-  }
-
-  setTimeout(() => {
-    document.getElementById("deployZipBtn").disabled = false;
   }, 5000);
 });
 

@@ -6,12 +6,13 @@ body {
 }
 
 .container {
-  max-width: 700px;
-  margin: auto;
-  background: white;
-  /* background: #fff; */
-  /* border-radius: 12px; */
-  padding: 90px;
+  align-content: center;
+      max-width: 700px;
+      margin: auto;
+      /* background: linear-gradient(#e8e0e9, #ffffff); */
+      border-radius: 12px;
+      padding: 30px;
+      background: white;
   /* box-shadow: 0 0 15px rgba(0,0,0,0.1); */
 }
 
@@ -24,7 +25,7 @@ h1 {
 .card {
   /* background: linear-gradient(#dea8ea, #ffffff); */
   background: #fff;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
