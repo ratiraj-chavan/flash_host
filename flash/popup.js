@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const userDashboardBtn = document.getElementById("userDashboardBtn");
   if (userDashboardBtn) {
     userDashboardBtn.addEventListener("click", () => {
-      window.open("../user_dashboard/login.html", "_blank");
+      window.open("http://127.0.0.1:5500/user_dashboard/login.html", "_blank");
     });
   }
 });
