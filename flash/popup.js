@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const userDashboardBtn = document.getElementById("userDashboardBtn");
   if (userDashboardBtn) {
     userDashboardBtn.addEventListener("click", () => {
-      window.open("https://flash-host.vercel.app/login.html", "_blank");
+      window.open("../user_dashboard/login.html", "_blank");
     });
   }
 });
